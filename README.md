@@ -20,9 +20,11 @@ Without options specified application shows CRC32 hash in both decimal and hexad
 
 The following options are supported:
 
-**/dec** - display CRC32 hash in decimal format (3281181382)
-**/hex** - display CRC32 hash in uppercase hexadecimal format (C392DAC6)
-**/lowerhex** - display CRC32 hash in lowercase hexadecimal format (c392dac6)
+`/dec` - display CRC32 hash in decimal format (3281181382)
+
+`/hex` - display CRC32 hash in uppercase hexadecimal format (C392DAC6)
+
+`/lowerhex` - display CRC32 hash in lowercase hexadecimal format (c392dac6)
 
 Examples:
 
@@ -35,4 +37,4 @@ crc32 -lowerhex filename.bin
 
 #### Points of interest
 
-Thois program uses a C# implementation of CRC32 hash algorithm that is inherited from [System.Security.Cryptography.HashAlgorithm](https://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm.aspx) class.
+This program uses a C# implementation of CRC32 hash algorithm that is inherited from [System.Security.Cryptography.HashAlgorithm](https://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm.aspx) class.
