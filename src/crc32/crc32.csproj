@@ -9,11 +9,15 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Vurdalakov.Crc32</RootNamespace>
-    <AssemblyName>crc32exe</AssemblyName>
+    <AssemblyName>crc32</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(SolutionDir)..\obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(SolutionDir)..\bin\</BaseOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -40,20 +44,20 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vurdalakov\AssemblyInfo.cs" />
+    <Compile Include="Vurdalakov\CommandLineOption.cs" />
+    <Compile Include="Vurdalakov\CommandLineOptions.cs" />
+    <Compile Include="Vurdalakov\CommandLineParser.cs" />
+    <Compile Include="Vurdalakov\CRC32.cs" />
+    <Compile Include="Vurdalakov\CRC32Managed.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\vurdalakovdotnet\src\vurdalakovdotnet\vurdalakovdotnet.csproj">
-      <Project>{6A3C36B7-D1AF-42FF-B0B9-A15710A92E35}</Project>
-      <Name>vurdalakovdotnet</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>$(ProjectDir)post_build.bat $(ConfigurationName) $(TargetDir)
-</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
