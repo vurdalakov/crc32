@@ -1,5 +1,8 @@
 ﻿// This software is part of the CRC32 application.
-// CRC32 is a command-line program that calculates CRC32 hash of a file.
+// CRC32 is a command-line program that calculates CRC32 file hashes.
+// https://github.com/vurdalakov/crc32
+//
+// The MIT License (MIT)
 //
 // Copyright (c) 2012 Vurdalakov
 // http://www.vurdalakov.net

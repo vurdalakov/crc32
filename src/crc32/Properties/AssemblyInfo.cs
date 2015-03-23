@@ -1,5 +1,8 @@
 ﻿// This software is part of the CRC32 application.
-// CRC32 is a command-line program that calculates CRC32 hash of a file.
+// CRC32 is a command-line program that calculates CRC32 file hashes.
+// https://github.com/vurdalakov/crc32
+//
+// The MIT License (MIT)
 //
 // Copyright (c) 2012 Vurdalakov
 // http://www.vurdalakov.net
@@ -33,7 +36,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("crc32")]
-[assembly: AssemblyDescription("http://www.vurdalakov.net")]
+[assembly: AssemblyDescription("A command-line program that calculates CRC32 file hashes")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Vurdalakov")]
 [assembly: AssemblyProduct("crc32")]
