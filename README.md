@@ -37,4 +37,4 @@ crc32 -lowerhex filename.bin
 
 #### Points of interest
 
-This program uses a C# implementation of CRC32 hash algorithm that is inherited from [System.Security.Cryptography.HashAlgorithm](https://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm.aspx) class.
+This program uses a [C# implementation of CRC32 hash algorithm](https://github.com/vurdalakov/vurdalakov.github.io/wiki/CRC32) that is inherited from [System.Security.Cryptography.HashAlgorithm](https://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm.aspx) class.
